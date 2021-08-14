@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FaUserAlt } from 'react-icons/fa';
+import { FaUserAlt, FaRegMap, FaRegFileAlt, FaPhoneAlt } from 'react-icons/fa';
 type menuItemType = {
     icon: React.ReactNode;
     body: string;
@@ -18,9 +18,10 @@ const index = () => {
 };
 
 const data = [
-    { id: 1, icon: <FaUserAlt />, body: 'Profile' },
-    { id: 2, icon: <FaUserAlt />, body: 'Profile' },
-    { id: 3, icon: <FaUserAlt />, body: 'Profile' },
+    { id: 1, icon: <FaUserAlt />, body: 'About Me' },
+    { id: 2, icon: <FaRegMap />, body: 'Portfolio' },
+    { id: 3, icon: <FaRegFileAlt />, body: 'Resume' },
+    { id: 4, icon: <FaPhoneAlt />, body: 'Contact' },
 ];
 export const MenuItem = ({ icon, body, url }: menuItemType) => {
     return (
@@ -37,7 +38,6 @@ const Container = styled.div`
     width: 100%;
     text-align: left;
     align-content: center;
-    background: green;
 `;
 const Item = styled.div`
     display: flex;
@@ -45,6 +45,8 @@ const Item = styled.div`
     align-items: center;
     padding: 0.5rem 0rem 0.5rem 2.5rem;
     height: 2rem;
+    cursor: pointer;
+    font-weight: 700;
     div {
         margin-right: 1rem;
     }

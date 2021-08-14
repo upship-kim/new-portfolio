@@ -1,8 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import Switch from './Atom/Switch';
 const Contents = () => {
-    return <Container>contents</Container>;
+    return (
+        <Container>
+            contents
+            <Switch />
+        </Container>
+    );
 };
 
 const Container = styled.div`
