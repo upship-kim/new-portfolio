@@ -2,15 +2,15 @@ import React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 
 import { light } from './color/theme';
-import Contents from './components/Templates/Contents';
-import NavBar from './components/Templates/NavBar';
+import ContentsTemplate from './components/Templates/ContentsTemplate';
+import NavBarTemplate from './components/Templates/NavBarTemplate';
 
 function App() {
     return (
         <ThemeProvider theme={light}>
             <Container>
-                <NavBar />
-                <Contents />
+                <NavBarTemplate />
+                <ContentsTemplate />
             </Container>
         </ThemeProvider>
     );

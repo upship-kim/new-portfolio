@@ -1,18 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
-import LinkList from '../../Organisms/LinkList';
-import Profile from '../../Organisms/Profile';
-import Switch from '../../Organisms/Switch';
+import LinkListBlock from '../../Organisms/LinkListBlock';
+import ProfileBlock from '../../Organisms/ProfileBlock';
+import SwitchBlock from '../../Organisms/SwitchBlock';
 
 const index = () => {
     return (
         <Container>
             <Wrapper>
-                <Profile />
+                <ProfileBlock />
                 <Line />
-                <LinkList />
+                <LinkListBlock />
                 <Line />
-                <Switch />
+                <SwitchBlock />
             </Wrapper>
         </Container>
     );
