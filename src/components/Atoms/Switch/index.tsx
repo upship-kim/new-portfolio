@@ -2,17 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 
 type SwitchType = {
-    state: boolean;
-    onChange: () => void;
+    state?: boolean;
+    onChange?: () => void;
 };
 
-const SwitchForm = ({ state, onChange }: SwitchType) => {
+const index = ({ state, onChange }: SwitchType) => {
     return (
-        <Container style={state ? {} : { opacity: '0.8' }}>
-            <Wrapper
-                onClick={onChange}
-                style={state ? {} : { justifyContent: 'flex-end' }}
-            >
+        <Container onClick={onChange} style={state ? {} : { opacity: '0.8' }}>
+            <Wrapper style={state ? {} : { justifyContent: 'flex-end' }}>
                 <Circle />
             </Wrapper>
         </Container>
@@ -47,4 +44,4 @@ const Circle = styled.div`
     background: ${props => props.theme.bg};
 `;
 
-export default SwitchForm;
+export default index;

@@ -10,7 +10,7 @@ export const Item = ({ icon }: ItemType) => {
     return <Style>{icon}</Style>;
 };
 
-export default function LinkIcon() {
+export default function index() {
     return (
         <List>
             <Item icon={<FiGithub />} />

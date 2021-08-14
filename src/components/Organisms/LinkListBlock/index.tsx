@@ -1,11 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FaUserAlt, FaRegMap, FaRegFileAlt, FaPhoneAlt } from 'react-icons/fa';
-type menuItemType = {
-    icon: React.ReactNode;
-    body: string;
-    url?: string;
-};
+import MenuItem from '../../Molecules/MenuItem';
+
 const index = () => {
     return (
         <Container>
@@ -23,14 +20,6 @@ const data = [
     { id: 3, icon: <FaRegFileAlt />, body: 'Resume' },
     { id: 4, icon: <FaPhoneAlt />, body: 'Contact' },
 ];
-export const MenuItem = ({ icon, body, url }: menuItemType) => {
-    return (
-        <Item>
-            <div>{icon}</div>
-            <div>{body}</div>
-        </Item>
-    );
-};
 
 const Container = styled.div`
     display: flex;
@@ -38,24 +27,5 @@ const Container = styled.div`
     width: 100%;
     text-align: left;
     align-content: center;
-`;
-const Item = styled.div`
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0.5rem 0rem 0.5rem 2.5rem;
-    height: 2rem;
-    cursor: pointer;
-    font-weight: 700;
-    div {
-        margin-right: 1rem;
-    }
-    &:hover {
-        background: ${props => props.theme.bg};
-        color: ${props => props.theme.text};
-    }
-    &:active {
-        border-left: 0.4rem solid blue;
-    }
 `;
 export default index;

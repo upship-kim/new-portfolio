@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import Switch from './Atom/Switch';
-const Contents = () => {
+import Switch from '../../Atoms/Switch';
+const index = () => {
     return (
         <Container>
             contents
@@ -16,4 +16,4 @@ const Container = styled.div`
     background: ${props => props.theme.bg};
     padding: 2rem;
 `;
-export default Contents;
+export default index;

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import SwitchForm from './SwitchForm';
+import Switch from '../../components/Atoms/Switch';
 
 const SwitchContainer = () => {
     const [state, setState] = useState<boolean>(false);
@@ -8,7 +8,7 @@ const SwitchContainer = () => {
         setState(() => !state);
     };
 
-    return <SwitchForm state={state} onChange={onChange} />;
+    return <Switch state={state} onChange={onChange} />;
 };
 
 export default SwitchContainer;

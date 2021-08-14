@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import Switch from '../../common/Atom/Switch';
 import { CgDarkMode } from 'react-icons/cg';
+import SwitchContainer from '../../../containers/navigation/SwitchContainer';
 const index = () => {
     return (
         <Container>
@@ -9,7 +9,7 @@ const index = () => {
                 <CgDarkMode size={30} />
                 Dark/Light Mode
             </StyledSpan>
-            <Switch />
+            <SwitchContainer />
         </Container>
     );
 };

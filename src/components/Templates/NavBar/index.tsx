@@ -1,16 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
-import Profile from './Profile';
-import Navigator from './Navigator';
-import Switch from './Switch';
+import LinkList from '../../Organisms/LinkList';
+import Profile from '../../Organisms/Profile';
+import Switch from '../../Organisms/Switch';
 
-const Navigation = () => {
+const index = () => {
     return (
         <Container>
             <Wrapper>
                 <Profile />
                 <Line />
-                <Navigator />
+                <LinkList />
                 <Line />
                 <Switch />
             </Wrapper>
@@ -35,4 +35,4 @@ const Line = styled.hr`
     width: 100%;
     padding: 0;
 `;
-export default Navigation;
+export default index;
