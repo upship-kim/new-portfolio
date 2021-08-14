@@ -9,7 +9,9 @@ const Navigation = () => {
         <Container>
             <Wrapper>
                 <Profile />
+                <Line />
                 <Navigator />
+                <Line />
                 <Switch />
             </Wrapper>
         </Container>
@@ -28,5 +30,9 @@ const Wrapper = styled.div`
     padding: 2rem;
     justify-content: space-between;
 `;
-
+const Line = styled.hr`
+    color: #dddddd;
+    width: 100%;
+    padding: 0;
+`;
 export default Navigation;

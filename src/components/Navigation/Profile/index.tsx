@@ -25,9 +25,8 @@ const Container = styled.div`
     text-align: center;
     align-content: center;
     img {
-        width: 12rem;
+        width: 8rem;
         border-radius: 100%;
-        margin: 1rem;
     }
 `;
 const Intro = styled.p`

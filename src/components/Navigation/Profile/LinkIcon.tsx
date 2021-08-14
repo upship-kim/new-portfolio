@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { AiFillGithub } from 'react-icons/ai';
+import { FiGithub } from 'react-icons/fi';
 import { SiGmail } from 'react-icons/si';
 
 type ItemType = {
@@ -13,7 +13,7 @@ export const Item = ({ icon }: ItemType) => {
 export default function LinkIcon() {
     return (
         <List>
-            <Item icon={<AiFillGithub />} />
+            <Item icon={<FiGithub />} />
             <Item icon={<SiGmail />} />
         </List>
     );
@@ -21,7 +21,6 @@ export default function LinkIcon() {
 const List = styled.div`
     display: flex;
     flex-direction: row;
-    margin: 2rem;
     justify-content: center;
 `;
 const Style = styled.div`
