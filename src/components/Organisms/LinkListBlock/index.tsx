@@ -12,7 +12,7 @@ const index = () => {
                         key={i.id}
                         icon={i.icon}
                         body={i.body}
-                        url={i.url}
+                        url={i.url === 'home' ? '' : i.url}
                     />
                 ))}
         </Container>
@@ -20,10 +20,10 @@ const index = () => {
 };
 
 const data = [
-    { id: 1, icon: <FaUserAlt />, body: 'About Me', url: '/' },
-    { id: 2, icon: <FaRegMap />, body: 'Portfolio', url: '/portfolio' },
-    { id: 3, icon: <FaRegFileAlt />, body: 'Resume', url: '/resume' },
-    { id: 4, icon: <FaPhoneAlt />, body: 'Contact', url: '/contact' },
+    { id: 1, icon: <FaUserAlt />, body: 'About Me', url: 'home' },
+    { id: 2, icon: <FaRegMap />, body: 'Portfolio', url: 'portfolio' },
+    { id: 3, icon: <FaRegFileAlt />, body: 'Resume', url: 'resume' },
+    { id: 4, icon: <FaPhoneAlt />, body: 'Contact', url: 'contact' },
 ];
 
 const Container = styled.div`

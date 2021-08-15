@@ -10,7 +10,7 @@ type menuItemType = {
 
 export const index = ({ icon, body, url }: menuItemType) => {
     return (
-        <Item to={`${url}`}>
+        <Item to={`/${url}`} exact={url === ''}>
             <div>{icon}</div>
             <div>{body}</div>
         </Item>

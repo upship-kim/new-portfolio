@@ -7,8 +7,8 @@ const index = () => {
     return (
         <Container>
             <Switch>
-                <Route exact path={['/', '/home']} component={Home} />
-                <Route exact path={'/portfolio'} component={Portfolio} />
+                <Route exact path="/" component={Home} />
+                <Route exact path="/portfolio" component={Portfolio} />
             </Switch>
         </Container>
     );
