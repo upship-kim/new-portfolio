@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 type menuItemType = {
@@ -9,14 +10,14 @@ type menuItemType = {
 
 export const index = ({ icon, body, url }: menuItemType) => {
     return (
-        <Item>
+        <Item to={`${url}`}>
             <div>{icon}</div>
             <div>{body}</div>
         </Item>
     );
 };
 
-const Item = styled.div`
+const Item = styled(NavLink)`
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -24,6 +25,8 @@ const Item = styled.div`
     height: 2rem;
     cursor: pointer;
     font-weight: 700;
+    color: ${props => props.theme.navText};
+    text-decoration: none;
     div {
         margin-right: 1rem;
     }
@@ -31,8 +34,12 @@ const Item = styled.div`
         background: ${props => props.theme.bg};
         color: ${props => props.theme.text};
     }
-    &:active {
-        border-left: 0.4rem solid blue;
+    &.active {
+        background: ${props => props.theme.bg};
+        color: ${props => props.theme.text};
+        border-left: 0.4rem solid violet;
+        padding: 0.5rem 0rem 0.5rem 2.1rem;
+        border-radius: 2px;
     }
 `;
 export default index;

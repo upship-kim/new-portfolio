@@ -1,9 +1,11 @@
 import React from 'react';
+import { Route, Switch } from 'react-router-dom';
 import styled, { ThemeProvider } from 'styled-components';
 
 import { light } from './color/theme';
 import ContentsTemplate from './components/Templates/ContentsTemplate';
 import NavBarTemplate from './components/Templates/NavBarTemplate';
+import Home from './pages/Home';
 
 function App() {
     return (

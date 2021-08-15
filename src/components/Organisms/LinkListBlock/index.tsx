@@ -8,17 +8,22 @@ const index = () => {
         <Container>
             {data &&
                 data.map(i => (
-                    <MenuItem key={i.id} icon={i.icon} body={i.body} />
+                    <MenuItem
+                        key={i.id}
+                        icon={i.icon}
+                        body={i.body}
+                        url={i.url}
+                    />
                 ))}
         </Container>
     );
 };
 
 const data = [
-    { id: 1, icon: <FaUserAlt />, body: 'About Me' },
-    { id: 2, icon: <FaRegMap />, body: 'Portfolio' },
-    { id: 3, icon: <FaRegFileAlt />, body: 'Resume' },
-    { id: 4, icon: <FaPhoneAlt />, body: 'Contact' },
+    { id: 1, icon: <FaUserAlt />, body: 'About Me', url: '/' },
+    { id: 2, icon: <FaRegMap />, body: 'Portfolio', url: '/portfolio' },
+    { id: 3, icon: <FaRegFileAlt />, body: 'Resume', url: '/resume' },
+    { id: 4, icon: <FaPhoneAlt />, body: 'Contact', url: '/contact' },
 ];
 
 const Container = styled.div`

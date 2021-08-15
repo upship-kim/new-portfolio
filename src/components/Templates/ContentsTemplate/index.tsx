@@ -1,11 +1,15 @@
 import React from 'react';
+import { Route, Switch } from 'react-router-dom';
 import styled from 'styled-components';
-import Switch from '../../Atoms/Switch';
+import Home from '../../../pages/Home';
+import Portfolio from '../../../pages/Portfolio';
 const index = () => {
     return (
         <Container>
-            contents
-            <Switch />
+            <Switch>
+                <Route exact path={['/', '/home']} component={Home} />
+                <Route exact path={'/portfolio'} component={Portfolio} />
+            </Switch>
         </Container>
     );
 };
