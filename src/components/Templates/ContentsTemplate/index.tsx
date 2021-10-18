@@ -1,21 +1,14 @@
-import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import styled from 'styled-components';
+
 import Contact from '../../../pages/Contact';
 import Home from '../../../pages/Home';
 import Portfolio from '../../../pages/Portfolio';
+import React from 'react';
 import Resume from '../../../pages/Resume';
+import styled from 'styled-components';
+
 const index = () => {
-    return (
-        <Container>
-            <Switch>
-                <Route exact path="/" component={Home} />
-                <Route exact path="/portfolio" component={Portfolio} />
-                <Route exact path="/resume" component={Resume} />
-                <Route exact path="/contact" component={Contact} />
-            </Switch>
-        </Container>
-    );
+    return <Home />;
 };
 
 const Container = styled.div`
@@ -23,5 +16,6 @@ const Container = styled.div`
     flex: 4;
     background: ${props => props.theme.bg};
     padding: 2rem;
+    background: red;
 `;
 export default index;
