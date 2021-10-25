@@ -16,11 +16,11 @@ export default Content;
 const Container = styled.div`
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     background: ${props => props.theme.contentBg};
     color: ${props => props.theme.text};
     border-radius: 10px;
     flex: 1;
-    margin: 3rem 4rem;
+    margin: 2rem 4rem;
     padding: 2rem 2rem;
 `;

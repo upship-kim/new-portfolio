@@ -1,33 +1,37 @@
 import React, { useState } from 'react';
+import { componentsData, headerTitle, menuData } from '../../../data/dataForm';
 
 import Content from '../../Molecules/SectionWrapper/SectionWrapper';
-import Intro from '../../Organisms/Intro/Intro';
 import MeIcon from '../../../asset/picture/meicon.png';
 import MenuTag from '../../Molecules/MenuTag/MenuTag';
 import TopHeader from '../../Molecules/TopImage/TopImage';
-import { menuData } from '../../../data/dataForm';
 import styled from 'styled-components';
 
 //Todo: State 값에 따라 dynami
 const RootTemplate = () => {
     const [state, setState] = useState<number>(0);
-
+    const onChangeState = (id: number) => {
+        setState(() => id);
+    };
     return (
         <Container>
             <TopHeader
                 image={MeIcon}
                 alt={'topEmoticon'}
-                title={'프론트엔드 개발자 김상배 입니다.'}
+                title={headerTitle[state].title}
             />
             <TagRow>
                 {menuData.map((item: any) => (
                     <MenuTag
-                        tagText={item?.tagText}
+                        key={item?.id}
+                        item={item}
+                        onClick={onChangeState}
                         activeTag={state === item?.id ? true : false}
                     />
                 ))}
             </TagRow>
-            <Content component={<Intro />} />
+
+            <Content component={componentsData[state]} />
         </Container>
     );
 };
@@ -41,6 +45,7 @@ const Container = styled.div`
     align-items: center;
     justify-content: flex-start;
     background: ${props => props.theme.bg};
+    padding: 0 6rem;
 `;
 const TagRow = styled.div`
     display: flex;

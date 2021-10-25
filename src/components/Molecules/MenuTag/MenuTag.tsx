@@ -2,14 +2,21 @@ import React from 'react';
 import styled from 'styled-components';
 
 interface MenuTagArgs {
-    tagText: string;
+    item: {
+        tagText: string;
+        id: number;
+    };
     activeTag: boolean;
+    onClick: (id: number) => void;
 }
 
-export const MenuTag = ({ tagText, activeTag }: MenuTagArgs) => {
+export const MenuTag = ({ item, activeTag, onClick }: MenuTagArgs) => {
     return (
-        <Item className={activeTag ? 'active' : 'none'}>
-            <div>{tagText}</div>
+        <Item
+            className={activeTag ? 'active' : 'none'}
+            onClick={() => onClick(item.id)}
+        >
+            <div>{item.tagText}</div>
         </Item>
     );
 };
