@@ -7,9 +7,10 @@ export const light = {
 };
 
 export const dark = {
-    bg: '#181e27',
+    bg: '#11151b',
+    contentBg: '#29313f',
     text: '#a5a5a5a5',
-    navBg: 'gray',
-    navText: '#ffffff',
-    iconBg: '#Ffffff',
+    tagBg: 'transparent',
+    tagBoder: 'gray',
+    activeTag: 'violet',
 };
