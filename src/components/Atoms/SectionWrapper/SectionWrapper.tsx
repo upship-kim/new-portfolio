@@ -5,15 +5,10 @@ import styled from 'styled-components';
 
 interface SectionWrapperArgs {
     component: JSX.Element;
-    id: string;
 }
 
-const SectionWrapper = ({ id, component }: SectionWrapperArgs) => {
-    return (
-        <Container id={id}>
-            <div>{component}</div>
-        </Container>
-    );
+const SectionWrapper = ({ component }: SectionWrapperArgs) => {
+    return <Container>{component}</Container>;
 };
 
 export default SectionWrapper;
@@ -21,6 +16,6 @@ export default SectionWrapper;
 const Container = styled.section`
     display: flex;
     flex-direction: column;
-    min-height: 30vh;
+    min-height: 100vh;
     background: white;
 `;

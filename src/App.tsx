@@ -5,7 +5,7 @@ import styled, { ThemeProvider } from 'styled-components';
 import ContentsTemplate from './components/Templates/ContentsTemplate';
 import ContentsWrapper from './components/Atoms/ContentsWrapper/ContentsWrapper';
 import Home from './pages/Home';
-import NavBarTemplate from './components/Templates/NavBarTemplate';
+import IntroTemplate from './components/Templates/IntroTemplate/IntroTemplate';
 import React from 'react';
 import SectionWrapper from './components/Atoms/SectionWrapper/SectionWrapper';
 
@@ -13,10 +13,7 @@ function App() {
     return (
         <ThemeProvider theme={dark}>
             <ContentsWrapper>
-                <SectionWrapper id="intro" component={NavBarTemplate()} />
-                <SectionWrapper id="1" component={NavBarTemplate()} />
-                <SectionWrapper id="2" component={NavBarTemplate()} />
-                <SectionWrapper id="end" component={Home()} />
+                {/* <SectionWrapper component={IntroTemplate()} /> */}
             </ContentsWrapper>
         </ThemeProvider>
     );

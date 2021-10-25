@@ -7,7 +7,7 @@ export const light = {
 };
 
 export const dark = {
-    bg: '#56646f',
+    bg: '#181e27',
     text: '#a5a5a5a5',
     navBg: 'gray',
     navText: '#ffffff',
