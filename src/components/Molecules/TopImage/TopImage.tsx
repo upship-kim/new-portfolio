@@ -12,7 +12,18 @@ interface TopImageParams {
 const TopHeader: React.FC<TopImageParams> = ({ image, alt, title }) => {
     return (
         <Container>
-            <Image src={image} alt={alt} />
+            <HeaderRow>
+                <Block style={{ justifyContent: 'flex-start' }}>
+                    <MainText text={'upship-kim'} />
+                </Block>
+                <Block>
+                    <Image src={image} alt={alt} />
+                </Block>
+
+                <Block style={{ justifyContent: 'flex-end' }}>
+                    <MainText text={'(깃허브 연동 & 다크모드)'} />
+                </Block>
+            </HeaderRow>
             <MainText text={title} />
         </Container>
     );
@@ -26,4 +37,16 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+`;
+const HeaderRow = styled.div`
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+`;
+const Block = styled.div`
+    width: 33%;
+    display: flex;
+    justify-content: center;
 `;

@@ -22,5 +22,4 @@ const Container = styled.div`
     border-radius: 10px;
     flex: 1;
     margin: 2rem 4rem;
-    padding: 2rem 2rem;
 `;

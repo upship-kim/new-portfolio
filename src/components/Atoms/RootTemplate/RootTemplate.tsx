@@ -45,7 +45,7 @@ const Container = styled.div`
     align-items: center;
     justify-content: flex-start;
     background: ${props => props.theme.bg};
-    padding: 0 6rem;
+    padding: 0 4rem;
 `;
 const TagRow = styled.div`
     display: flex;
