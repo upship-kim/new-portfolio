@@ -1,7 +1,6 @@
 import '../../../App.css';
 
 import ContentWrapper from '../../Atoms/ContentWrapper/ContentWrapper';
-import Image from '../../Atoms/Image/Image';
 import React from 'react';
 import SkillTag from '../../Atoms/SkillTag/SkillTag';
 import reactLogo from '../../../asset/logo/react.png';

@@ -1,6 +1,4 @@
-import { JsxChild, JsxElement } from 'typescript';
-import React, { JSXElementConstructor, ReactChildren, ReactNode } from 'react';
-
+import React from 'react';
 import styled from 'styled-components';
 
 interface ContentArgs {

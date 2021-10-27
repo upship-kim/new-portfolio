@@ -1,8 +1,6 @@
-import { dark, light } from './color/theme';
-
 import MainPage from './components/Page/MainPage/MainPage';
-import React from 'react';
 import { ThemeProvider } from 'styled-components';
+import { dark } from './color/theme';
 
 function App() {
     return (

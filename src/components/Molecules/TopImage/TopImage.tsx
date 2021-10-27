@@ -1,6 +1,5 @@
 import { BsGithub } from 'react-icons/bs';
 import Image from '../../Atoms/Image/Image';
-import { Link } from 'react-router-dom';
 import MainText from '../../Atoms/MainText/MainText';
 import React from 'react';
 import styled from 'styled-components';

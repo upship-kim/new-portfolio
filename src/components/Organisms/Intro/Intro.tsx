@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 
 import ContentWrapper from '../../Atoms/ContentWrapper/ContentWrapper';
 import Image from '../../Atoms/Image/Image';
-import { count } from 'console';
 import { introIntroduce } from '../../../data/dataForm';
 import memotion from '../../../asset/picture/meicon2.png';
 import styled from 'styled-components';
