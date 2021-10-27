@@ -45,6 +45,8 @@ const introIntroduce = [
     '현재 웹과 앱을 통한 디지털 치료제를 개발하고 있는 기업에 재직중에 있으며,',
 
     '스스로에 대한 성장과 더불어 좋은 아키텍쳐와 코드, 좋은 동료에 대해 관심이 있습니다.',
+
+    '(Email: tkdqook@gmail.com)',
 ];
 
 const skillsDatas = {
