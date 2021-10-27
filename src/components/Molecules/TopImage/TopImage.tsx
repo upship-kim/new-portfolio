@@ -1,8 +1,9 @@
+import { BsGithub } from 'react-icons/bs';
 import Image from '../../Atoms/Image/Image';
+import { Link } from 'react-router-dom';
 import MainText from '../../Atoms/MainText/MainText';
 import React from 'react';
 import styled from 'styled-components';
-
 interface TopImageParams {
     image: string;
     alt: string;
@@ -21,7 +22,9 @@ const TopHeader: React.FC<TopImageParams> = ({ image, alt, title }) => {
                 </Block>
 
                 <Block style={{ justifyContent: 'flex-end' }}>
-                    <MainText text={'(깃허브 연동 & 다크모드)'} />
+                    <a href={'https://github.com/upship-kim'}>
+                        <BsGithub color={'gray'} size={30} />
+                    </a>
                 </Block>
             </HeaderRow>
             <MainText text={title} />

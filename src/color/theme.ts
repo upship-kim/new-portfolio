@@ -12,5 +12,6 @@ export const dark = {
     text: '#a5a5a5a5',
     tagBg: 'transparent',
     tagBoder: 'gray',
+    skillTag: '#526ead',
     activeTag: 'violet',
 };

@@ -1,23 +1,28 @@
+import ProjectItem, {
+    ProjectItemArgs,
+} from '../../Atoms/ProjectItem/ProjectItem';
+
+import ContentWrapper from '../../Atoms/ContentWrapper/ContentWrapper';
+import { ProjectData } from '../../../data/dataForm';
 import React from 'react';
+import styled from 'styled-components';
 
 const Projects = () => {
     return (
-        <div>
-            Projects
-            <br />
-            블로그
-            <br />
-            trello
-            <br />
-            영화뷰어
-            <br />
-            게시판
-            <br />
-            react-native app
-            <br />
-            goodbeginning web / app
-        </div>
+        <ContentWrapper>
+            <PortfolioList>
+                {ProjectData.map((item: ProjectItemArgs) => (
+                    <ProjectItem title={item.title} body={item.body} />
+                ))}
+            </PortfolioList>
+        </ContentWrapper>
     );
 };
 
 export default Projects;
+const PortfolioList = styled.div`
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+`;

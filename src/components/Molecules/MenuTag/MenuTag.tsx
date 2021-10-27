@@ -31,6 +31,7 @@ const Item = styled.div`
     color: ${props => props.theme.text};
     text-decoration: none;
     border-radius: 10px;
+    border: 1px solid ${props => props.theme.bg};
 
     &:hover {
         background: ${props => props.theme.tagBg};
