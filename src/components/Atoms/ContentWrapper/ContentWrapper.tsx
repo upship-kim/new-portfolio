@@ -14,5 +14,7 @@ const Container = styled.div`
     flex-direction: row;
     @media screen and (max-width: 768px) {
         flex-wrap: wrap;
+        padding: 1rem;
+        align-items: center;
     }
 `;

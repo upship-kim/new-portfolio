@@ -61,6 +61,10 @@ const IntroducBox = styled.div`
     height: 80%;
     justify-content: flex-start;
     color: #a1a1a1;
+    @media screen and (max-width: 768px) {
+        height: 100%;
+        margin-top: 1rem;
+    }
 `;
 const SpanText = styled.span`
     margin-bottom: 2rem;
