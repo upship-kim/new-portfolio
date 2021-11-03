@@ -44,6 +44,7 @@ const Container = styled.div`
         width: 90%;
         h2 {
             font-size: 1rem;
+            color: #acacac;
         }
     }
 `;
