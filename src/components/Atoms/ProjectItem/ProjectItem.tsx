@@ -60,10 +60,20 @@ export default ProjectItem;
 const ItemBlock = styled.div`
     border: 1px solid ${props => props.theme.textColor};
     box-sizing: border-box;
-    margin-right: 16px;
+    margin-right: 1rem;
     padding: 0.8rem;
     display: flex;
     flex-direction: column;
     border-radius: 1rem;
     box-shadow: 3px 3px 2px 1px rgba(0, 0, 255, 0.2);
+    @media screen and (max-width: 1000px) {
+        width: 40%;
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
 `;

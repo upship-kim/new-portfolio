@@ -46,10 +46,22 @@ const Container = styled.div`
     justify-content: flex-start;
     background: ${props => props.theme.bg};
     padding: 0 4rem;
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        padding: 1rem 0;
+        height: 100%;
+    }
 `;
 const TagRow = styled.div`
     display: flex;
     width: 50%;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    @media screen and (max-width: 768px) {
+        justify-content: center;
+        width: 80%;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+    }
 `;

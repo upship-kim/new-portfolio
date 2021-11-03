@@ -12,4 +12,7 @@ const Container = styled.div`
     flex: 1;
     padding: 0rem 2rem;
     flex-direction: row;
+    @media screen and (max-width: 768px) {
+        flex-wrap: wrap;
+    }
 `;

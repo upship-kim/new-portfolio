@@ -54,6 +54,10 @@ const LogoContainer = styled.div`
     width: 40%;
     align-items: center;
     justify-content: center;
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        justify-content: center;
+    }
 `;
 const ImgStyled = styled.img``;
 const Container = styled.div`
@@ -70,5 +74,10 @@ const SkillsBlock = styled.div`
     display: flex;
     flex-direction: row;
     padding: 0 1rem;
+    @media screen and (max-width: 768px) {
+        flex-wrap: wrap;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
 `;
 const SubTitle = styled.h3``;

@@ -43,8 +43,15 @@ const Item = styled.div`
         color: ${props => props.theme.activeTag};
         border: 1px solid ${props => props.theme.activeTag};
     }
-    & + & {
-        margin: 0 1rem;
+    & {
+        margin: 1rem;
+    }
+    @media screen and (max-width: 768px) {
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+        margin: 0.4rem 0rem;
+        padding: 0.4rem;
     }
 `;
 export default MenuTag;

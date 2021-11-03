@@ -20,4 +20,10 @@ const Container = styled.div`
     border-radius: 10px;
     flex: 1;
     margin: 2rem 4rem;
+    @media screen and (max-width: 768px) {
+        justify-content: center;
+        width: 90%;
+        padding: 16px 0;
+        margin: 0rem;
+    }
 `;

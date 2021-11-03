@@ -13,14 +13,14 @@ const TopHeader: React.FC<TopImageParams> = ({ image, alt, title }) => {
     return (
         <Container>
             <HeaderRow>
-                <Block style={{ justifyContent: 'flex-start' }}>
+                <Block className="left">
                     <MainText text={'upship-kim'} />
                 </Block>
                 <Block>
                     <Image src={image} alt={alt} />
                 </Block>
 
-                <Block style={{ justifyContent: 'flex-end' }}>
+                <Block className="right">
                     <a href={'https://github.com/upship-kim'}>
                         <BsGithub color={'gray'} size={30} />
                     </a>
@@ -39,6 +39,13 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    @media screen and (max-width: 768px) {
+        padding: 0 0.4rem;
+        width: 90%;
+        h2 {
+            font-size: 1rem;
+        }
+    }
 `;
 const HeaderRow = styled.div`
     display: flex;
@@ -46,9 +53,22 @@ const HeaderRow = styled.div`
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+
+    .left {
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+        justify-content: flex-start;
+    }
+    .right {
+        justify-content: flex-end;
+    }
 `;
 const Block = styled.div`
     width: 33%;
     display: flex;
     justify-content: center;
+    @media screen and (max-width: 768px) {
+        justify-content: flex-start;
+    }
 `;

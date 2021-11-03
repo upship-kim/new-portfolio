@@ -24,7 +24,7 @@ const Intro = () => {
     return (
         <ContentWrapper>
             <PicBlock>
-                <Image src={memotion} alt={'미모티콘'} width={22} />
+                <Image src={memotion} alt={'미모티콘'} width={18} />
             </PicBlock>
             <InfoBlock>
                 <IntroducBox>
@@ -42,6 +42,11 @@ export default Intro;
 const PicBlock = styled.div`
     display: flex;
     align-items: flex-end;
+    @media screen and (max-width: 768px) {
+        img {
+            display: none;
+        }
+    }
 `;
 const InfoBlock = styled.div`
     display: flex;
@@ -59,4 +64,7 @@ const IntroducBox = styled.div`
 `;
 const SpanText = styled.span`
     margin-bottom: 2rem;
+    @media screen and (max-width: 768px) {
+        margin-bottom: 1rem;
+    }
 `;

@@ -22,4 +22,8 @@ const Container = styled.div`
     border: 1px solid ${props => props.theme.skillTag};
     margin-right: 1rem;
     font-weight: 700;
+    @media screen and (max-width: 768px) {
+        margin: 0.2rem;
+        padding: 8px 10px;
+    }
 `;

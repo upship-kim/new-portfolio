@@ -25,4 +25,9 @@ const PortfolioList = styled.div`
     width: 100%;
     display: flex;
     overflow-x: auto;
+    @media screen and (max-width: 1000px) {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        overflow-x: hidden;
+    }
 `;

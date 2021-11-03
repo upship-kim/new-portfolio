@@ -10,7 +10,7 @@ const Career = () => {
     return (
         <ContentWrapper>
             <Container>
-                <Image src={pic} alt={'pic'} width={14} />
+                <Image src={pic} alt={'pic'} width={10} />
                 <InfoBlock>
                     {careerData.map((item: any) => (
                         <CareerItem data={item} />
@@ -30,6 +30,9 @@ const Container = styled.div`
     align-items: center;
 
     width: 100%;
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
 `;
 const InfoBlock = styled.div`
     display: flex;
@@ -37,4 +40,7 @@ const InfoBlock = styled.div`
     justify-content: flex-start;
     align-items: flex-start;
     width: 50%;
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
 `;
