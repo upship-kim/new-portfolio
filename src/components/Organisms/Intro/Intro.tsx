@@ -70,5 +70,9 @@ const SpanText = styled.span`
     margin-bottom: 2rem;
     @media screen and (max-width: 768px) {
         margin-bottom: 1rem;
+        :hover {
+            color: #ffffff;
+            cursor: default;
+        }
     }
 `;
