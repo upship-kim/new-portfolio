@@ -6,7 +6,7 @@ interface MainTextArgs {
 }
 
 const MainText = ({ text }: MainTextArgs) => {
-    return <Styled>{text}</Styled>;
+    return <Styled>{text}</Styled> ;
 };
 
 const Styled = styled.h2`

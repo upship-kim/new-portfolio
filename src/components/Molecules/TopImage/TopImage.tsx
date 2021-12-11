@@ -15,15 +15,18 @@ const TopHeader: React.FC<TopImageParams> = ({ image, alt, title }) => {
             <HeaderRow>
                 <Block className="left">
                     <MainText text={'upship-kim'} />
+
                 </Block>
                 <Block>
                     <Image src={image} alt={alt} />
                 </Block>
 
                 <Block className="right">
+                    <p>tkdqook@gmail.com</p>
                     <a href={'https://github.com/upship-kim'}>
                         <BsGithub color={'gray'} size={30} />
                     </a>
+
                 </Block>
             </HeaderRow>
             <MainText text={title} />
@@ -68,8 +71,13 @@ const HeaderRow = styled.div`
 const Block = styled.div`
     width: 33%;
     display: flex;
+    align-items: center;
     justify-content: center;
     @media screen and (max-width: 768px) {
         justify-content: flex-start;
+    }
+    p{
+      color: ${props => props.theme.text};
+      margin-right: 1rem;
     }
 `;
