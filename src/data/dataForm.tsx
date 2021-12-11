@@ -97,10 +97,15 @@ const ProjectData = [
 
 const careerData = [
     {
-        title: '현) 신성티케이 재직',
-        date: '재직기간: 2021.06 ~',
+        title: '웹 & 앱 SI 기업 재직',
+        date: '재직기간: 2021.12 ~ ',
+        role: `담당업무: Web Front-End Development`,
+    },
+    {
+        title: '디지털 헬스케어 IT서비스 기업 퇴사',
+        date: '재직기간: 2021.06 ~ 2022.12',
         role: `담당업무: Web Front-End Development 
-        (Web & App Project 각 2건 씩 진행)`,
+                (웹 & 앱 개발 및 배포 경험 있음)`,
     },
     {
         title: `'Java & JavaScript library을 활용한 반응형 웹 개발자 양성과정' 수료`,

@@ -1,4 +1,4 @@
-import MainPage from './components/Page/MainPage/MainPage';
+import MainPage from './Page/MainPage/MainPage';
 import { ThemeProvider } from 'styled-components';
 import { dark } from './color/theme';
 

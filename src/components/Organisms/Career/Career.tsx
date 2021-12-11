@@ -10,7 +10,7 @@ const Career = () => {
     return (
         <ContentWrapper>
             <Container>
-                <Image src={pic} alt={'pic'} width={10} />
+                <Image src={pic} alt={'pic'} width={15}  />
                 <InfoBlock>
                     {careerData.map((item: any) => (
                         <CareerItem data={item} />

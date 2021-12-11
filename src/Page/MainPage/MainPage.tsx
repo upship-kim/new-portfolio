@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { componentsData, headerTitle, menuData } from '../../../data/dataForm';
+import { componentsData, headerTitle, menuData } from '../../data/dataForm';
 
-import Content from '../../Molecules/SectionWrapper/SectionWrapper';
-import MeIcon from '../../../asset/picture/meicon.png';
-import MenuTag from '../../Molecules/MenuTag/MenuTag';
-import TopHeader from '../../Molecules/TopImage/TopImage';
+import Content from '../../components/Molecules/SectionWrapper/SectionWrapper';
+import MeIcon from '../../asset/picture/meicon.png';
+import MenuTag from '../../components/Molecules/MenuTag/MenuTag';
+import TopHeader from '../../components/Molecules/TopImage/TopImage';
 import styled from 'styled-components';
 
 //Todo: State 값에 따라 dynami
