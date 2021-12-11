@@ -10,7 +10,7 @@ import goodBeginning from '../asset/projects/goodBeginning.png'
 
 const headerTitle = [
     { title: '오늘보다 내일이 더 기대되는 김상배 입니다' },
-    { title: '주로 사용하는 Skll Stack 입니다' },
+    { title: '주로 사용하는 Skill Stack 입니다' },
     { title: '현재까지 진행한 주요 프로젝트 입니다' },
     { title: '개발자로서의 커리어를 위해 노력하고 있습니다.' },
 ];

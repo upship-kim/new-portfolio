@@ -26,7 +26,6 @@ const PortfolioList = styled.div`
     padding: 1rem;
     width: 100%;
     display: flex;
-    //overflow-x: auto;
     flex-wrap: wrap;
 
     justify-content: flex-start;
