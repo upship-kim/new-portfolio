@@ -12,7 +12,8 @@ type Body = {
     stack: string;
     descript: string;
     img: string;
-    url: string;
+    url?: string;
+    memo?:string;
 };
 const ProjectItem = ({ title, body }: ProjectItemArgs) => {
     return (
@@ -32,7 +33,7 @@ const ItemImage = ({ img }: Img) => {
                 border: '1px solid #eee',
             }}
             alt="img"
-        ></img>
+        />
     );
 };
 const ItemText = ({ title, body }: ProjectItemArgs) => {
@@ -44,6 +45,7 @@ const ItemText = ({ title, body }: ProjectItemArgs) => {
             <br />
             <b>주요 기능</b>
             <div> {body.descript}</div>
+            {body.url&&
             <a
                 href={body.url}
                 style={{ textDecoration: 'none', color: 'green' }}
@@ -51,6 +53,9 @@ const ItemText = ({ title, body }: ProjectItemArgs) => {
                 <br />
                 동작 영상 보기
             </a>
+            }
+            {body.memo && <p>{body.memo}</p>}
+
         </div>
     );
 };
@@ -60,16 +65,15 @@ export default ProjectItem;
 const ItemBlock = styled.div`
     border: 1px solid ${props => props.theme.textColor};
     box-sizing: border-box;
-    margin-right: 1rem;
+    margin: 1rem;
     padding: 0.8rem;
     display: flex;
+    width: 30%;
     flex-direction: column;
     border-radius: 1rem;
     box-shadow: 3px 3px 2px 1px rgba(0, 0, 255, 0.2);
     @media screen and (max-width: 1000px) {
         width: 40%;
-        margin: 0;
-        margin-bottom: 1rem;
     }
 
     @media screen and (max-width: 768px) {

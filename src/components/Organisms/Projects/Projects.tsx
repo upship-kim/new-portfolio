@@ -20,14 +20,20 @@ const Projects = () => {
 };
 
 export default Projects;
+
+
 const PortfolioList = styled.div`
     padding: 1rem;
     width: 100%;
     display: flex;
-    overflow-x: auto;
+    //overflow-x: auto;
+    flex-wrap: wrap;
+
+    justify-content: flex-start;
+    
     @media screen and (max-width: 1000px) {
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: flex-start;
         overflow-x: hidden;
     }
 `;

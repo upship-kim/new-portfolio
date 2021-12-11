@@ -6,11 +6,12 @@ import Skills from '../components/Organisms/Skills/Skills';
 import newsViewer from '../asset/projects/newsViewer.gif';
 import reactBlog from '../asset/projects/reactBlog.gif';
 import upshipWeb from '../asset/projects/upshipWeb.gif';
+import goodBeginning from '../asset/projects/goodBeginning.png'
 
 const headerTitle = [
     { title: '오늘보다 내일이 더 기대되는 김상배 입니다' },
     { title: '주로 사용하는 Skll Stack 입니다' },
-    { title: '진행한 개인 프로젝트 (회사에서 진행한 프로젝트 제외)' },
+    { title: '진행한 프로젝트' },
     { title: '개발자로서의 커리어를 쌓아가고 있습니다.' },
 ];
 
@@ -50,16 +51,25 @@ const introIntroduce = [
 ];
 
 const skillsDatas = {
-    language: ['Typescript', 'Javascript', 'HTML', 'CSS', 'NodeJs'],
+    language: ['TypeScript', 'JavaScript', 'HTML', 'CSS', 'NodeJs'],
     library: ['React', 'React-Native'],
     etc: ['Git', 'Postman', 'Slack', 'MongoDB'],
 };
 
 const ProjectData = [
     {
+        title: '굿비기닝',
+        body: {
+            stack: 'TypeScript / React-Native(Expo Cli) / Redux / Redux-Saga / JWT / Axios ',
+            descript: '회원가입, 로그인, 카메라 촬영, 촬영본 조회 및 저장, 무한 스크롤링',
+            img: goodBeginning,
+            memo: `영유아 행동발달 분석 서비스로 구글 플레이스토어, 애플 앱스토어에 '굿비기닝' 출시 완료`,
+        },
+    },
+    {
         title: 'Upship-블로그',
         body: {
-            stack: 'Javascript / React / Node.js / MongoDB / Redux / Redux-Saga / Axios',
+            stack: 'JavaScript / React / Node.js / MongoDB / Redux / Redux-Saga / Axios',
             descript: '회원가입, 로그인, 게시물 CRUD, 페이징',
             img: reactBlog,
             url: 'https://youtu.be/ArirruxRcAw',
@@ -68,7 +78,7 @@ const ProjectData = [
     {
         title: 'Upship-web 커뮤니티',
         body: {
-            stack: 'Java / Javascript / Oracle / JQuery / HTML5 / CSS3 / AJAX',
+            stack: 'Java / JavaScript / Oracle / JQuery / HTML5 / CSS3 / AJAX',
             descript:
                 '회원가입, 로그인, 게시물 CRUD, 댓글, 좋아요, 정렬, 페이징, 검색, 업로드, 다운로드',
             img: upshipWeb,
@@ -78,7 +88,7 @@ const ProjectData = [
     {
         title: '최신 뉴스 뷰어',
         body: {
-            stack: 'Javascript / React / Axios ',
+            stack: 'JavaScript / React / Axios ',
             descript: '실시간 뉴스 출력 (외부 API 데이터 연동)',
             img: newsViewer,
             url: 'https://youtu.be/WSpaAauCpOY',
