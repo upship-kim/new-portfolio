@@ -7,7 +7,6 @@ import MenuTag from '../../components/Molecules/MenuTag/MenuTag';
 import TopHeader from '../../components/Molecules/TopImage/TopImage';
 import styled from 'styled-components';
 
-//Todo: State 값에 따라 dynami
 const MainPage = () => {
     const [state, setState] = useState<number>(0);
     const onChangeState = (id: number) => {
@@ -26,7 +25,7 @@ const MainPage = () => {
                         key={item?.id}
                         item={item}
                         onClick={onChangeState}
-                        activeTag={state === item?.id ? true : false}
+                        activeTag={state === item?.id}
                     />
                 ))}
             </TagRow>
