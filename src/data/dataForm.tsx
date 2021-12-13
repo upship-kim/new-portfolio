@@ -51,7 +51,7 @@ const introIntroduce = [
 ];
 
 const skillsDatas = {
-    language: ['TypeScript', 'JavaScript', 'HTML', 'CSS', 'NodeJs'],
+    language: ['TypeScript', 'JavaScript', 'HTML', 'CSS'],
     library: ['React', 'React-Native'],
     etc: ['Git', 'Postman', 'Slack', 'MongoDB'],
 };
@@ -113,7 +113,7 @@ const careerData = [
     },
     {
         title: '디지털 헬스케어 IT서비스 기업 퇴사',
-        date: '재직기간: 2021.06 ~ 2022.12',
+        date: '재직기간: 2021.06 ~ 2021.12',
         role: `담당업무: Web Front-End Development 
                 (웹 & 앱 개발 및 배포 경험 있음)`,
     },
