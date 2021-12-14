@@ -106,13 +106,13 @@ const ProjectData = [
 ];
 
 const careerData = [
+    // {
+    //     title: '웹 & 앱 SI 기업 재직',
+    //     date: '재직기간: 2021.12 ~ ',
+    //     role: `담당업무: Web Front-End Development`,
+    // },
     {
-        title: '웹 & 앱 SI 기업 재직',
-        date: '재직기간: 2021.12 ~ ',
-        role: `담당업무: Web Front-End Development`,
-    },
-    {
-        title: '디지털 헬스케어 IT서비스 기업 퇴사',
+        title: '디지털 헬스케어 서비스 기업',
         date: '재직기간: 2021.06 ~ 2021.12',
         role: `담당업무: Web Front-End Development 
                 (웹 & 앱 개발 및 배포 경험 있음)`,
