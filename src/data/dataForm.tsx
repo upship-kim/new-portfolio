@@ -6,7 +6,7 @@ import Skills from '../components/Organisms/Skills/Skills';
 import newsViewer from '../asset/projects/newsViewer.gif';
 import reactBlog from '../asset/projects/reactBlog.gif';
 import upshipWeb from '../asset/projects/upshipWeb.gif';
-import goodBeginning from '../asset/projects/goodBeginning.png'
+import goodBeginning from '../asset/projects/goodBeginning.png';
 
 const headerTitle = [
     { title: '오늘보다 내일이 더 기대되는 김상배 입니다' },
@@ -79,8 +79,7 @@ const ProjectData = [
         title: 'Upship-web 커뮤니티',
         body: {
             stack: 'Java / JavaScript / Oracle / JQuery / HTML5 / CSS3 / AJAX',
-            descript:
-                '회원가입, 로그인, 게시물 CRUD, 댓글, 좋아요, 정렬, 페이징, 검색, 업로드, 다운로드',
+            descript: '회원가입, 로그인, 게시물 CRUD, 댓글, 좋아요, 정렬, 페이징, 검색, 업로드, 다운로드',
             img: upshipWeb,
             url: 'https://youtu.be/W5STgULeSa4',
         },
@@ -106,15 +105,20 @@ const ProjectData = [
 ];
 
 const careerData = [
-    // {
-    //     title: '웹 & 앱 SI 기업 재직',
-    //     date: '재직기간: 2021.12 ~ ',
-    //     role: `담당업무: Web Front-End Development`,
-    // },
+    {
+        title: '새벽 배송 서비스 기업 재직중',
+        date: '재직기간: 2022.02 ~ ',
+        role: `담당업무: 새벽배송 시스템 Web Front-End Develop`,
+    },
+    {
+        title: '웹 에이전시 기업',
+        date: '재직기간: 2021.12 ~ 2022.02 ',
+        role: `담당업무: Web Front-End Develop`,
+    },
     {
         title: '디지털 헬스케어 서비스 기업',
         date: '재직기간: 2021.06 ~ 2021.12',
-        role: `담당업무: Web Front-End Development 
+        role: `담당업무: 디지털 헬스케어 및 수액시스템 모니터링 Web Front-End Develop 
                 (웹 & 앱 개발 및 배포 경험 있음)`,
     },
     {
@@ -124,12 +128,4 @@ const careerData = [
     },
 ];
 
-export {
-    menuData,
-    headerTitle,
-    componentsData,
-    introIntroduce,
-    skillsDatas,
-    ProjectData,
-    careerData,
-};
+export { menuData, headerTitle, componentsData, introIntroduce, skillsDatas, ProjectData, careerData };
