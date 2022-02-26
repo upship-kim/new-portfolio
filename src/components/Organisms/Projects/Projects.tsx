@@ -1,6 +1,4 @@
-import ProjectItem, {
-    ProjectItemArgs,
-} from '../../Atoms/ProjectItem/ProjectItem';
+import ProjectItem, { ProjectItemArgs } from '../../Atoms/ProjectItem/ProjectItem';
 
 import ContentWrapper from '../../Atoms/ContentWrapper/ContentWrapper';
 import { ProjectData } from '../../../data/dataForm';
@@ -12,7 +10,7 @@ const Projects = () => {
         <ContentWrapper>
             <PortfolioList>
                 {ProjectData.map((item: ProjectItemArgs) => (
-                    <ProjectItem title={item.title} body={item.body} />
+                    <ProjectItem key={item.id} title={item.title} body={item.body} />
                 ))}
             </PortfolioList>
         </ContentWrapper>
@@ -21,14 +19,13 @@ const Projects = () => {
 
 export default Projects;
 
-
 const PortfolioList = styled.div`
     padding: 1rem;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    
+
     @media screen and (max-width: 1000px) {
         flex-wrap: wrap;
         justify-content: flex-start;

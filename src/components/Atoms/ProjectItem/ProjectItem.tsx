@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 export interface ProjectItemArgs {
+    id?: number;
     title: string;
     body: Body;
 }
@@ -13,7 +14,7 @@ type Body = {
     descript: string;
     img: string;
     url?: string;
-    memo?:string;
+    memo?: string;
 };
 const ProjectItem = ({ title, body }: ProjectItemArgs) => {
     return (
@@ -45,17 +46,13 @@ const ItemText = ({ title, body }: ProjectItemArgs) => {
             <br />
             <b>주요 기능</b>
             <div> {body.descript}</div>
-            {body.url&&
-            <a
-                href={body.url}
-                style={{ textDecoration: 'none', color: 'green' }}
-            >
-                <br />
-                동작 영상 보기
-            </a>
-            }
+            {body.url && (
+                <a href={body.url} style={{ textDecoration: 'none', color: 'green' }}>
+                    <br />
+                    동작 영상 보기
+                </a>
+            )}
             {body.memo && <p>{body.memo}</p>}
-
         </div>
     );
 };

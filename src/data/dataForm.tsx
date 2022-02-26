@@ -58,6 +58,7 @@ const skillsDatas = {
 
 const ProjectData = [
     {
+        id: 1,
         title: '굿비기닝',
         body: {
             stack: 'TypeScript / React-Native(Expo Cli) / Redux / Redux-Saga / JWT / Axios ',
@@ -67,6 +68,7 @@ const ProjectData = [
         },
     },
     {
+        id: 1,
         title: 'Upship-블로그',
         body: {
             stack: 'JavaScript / React / Node.js / MongoDB / Redux / Redux-Saga / Axios',
@@ -76,6 +78,7 @@ const ProjectData = [
         },
     },
     {
+        id: 2,
         title: 'Upship-web 커뮤니티',
         body: {
             stack: 'Java / JavaScript / Oracle / JQuery / HTML5 / CSS3 / AJAX',
@@ -85,6 +88,7 @@ const ProjectData = [
         },
     },
     {
+        id: 3,
         title: '최신 뉴스 뷰어',
         body: {
             stack: 'JavaScript / React / Axios ',
@@ -94,6 +98,7 @@ const ProjectData = [
         },
     },
     {
+        id: 4,
         title: 'Eat-In 식자재 쇼핑몰',
         body: {
             stack: 'HTML5 / CSS3 / JQuery / Bootstrap3',
@@ -106,22 +111,26 @@ const ProjectData = [
 
 const careerData = [
     {
+        id: 1,
         title: '새벽 배송 서비스 기업 재직중',
         date: '재직기간: 2022.02 ~ ',
         role: `담당업무: 새벽배송 시스템 Web Front-End Develop`,
     },
     {
+        id: 2,
         title: '웹 에이전시 기업',
         date: '재직기간: 2021.12 ~ 2022.02 ',
         role: `담당업무: Web Front-End Develop`,
     },
     {
+        id: 3,
         title: '디지털 헬스케어 서비스 기업',
         date: '재직기간: 2021.06 ~ 2021.12',
         role: `담당업무: 디지털 헬스케어 및 수액시스템 모니터링 Web Front-End Develop 
-                (웹 & 앱 개발 및 배포 경험 있음)`,
+        (웹 & 앱 개발 및 배포 경험 있음)`,
     },
     {
+        id: 4,
         title: `'Java & JavaScript library을 활용한 반응형 웹 개발자 양성과정' 수료`,
         date: '교육기간: 2020.06 ~ 2020.12',
         role: '교육기관: 쌍용교육센터(강남)',

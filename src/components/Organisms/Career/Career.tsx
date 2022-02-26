@@ -1,4 +1,4 @@
-import CareerItem from '../../Molecules/CareerItem/CareerItem';
+import CareerItem, { CareerTypes } from '../../Molecules/CareerItem/CareerItem';
 import ContentWrapper from '../../Atoms/ContentWrapper/ContentWrapper';
 import Image from '../../Atoms/Image/Image';
 import React from 'react';
@@ -10,10 +10,10 @@ const Career = () => {
     return (
         <ContentWrapper>
             <Container>
-                <Image src={pic} alt={'pic'} width={15}  />
+                <Image src={pic} alt={'pic'} width={15} />
                 <InfoBlock>
-                    {careerData.map((item: any) => (
-                        <CareerItem data={item} />
+                    {careerData.map((item: CareerTypes) => (
+                        <CareerItem key={item.id} data={item} />
                     ))}
                 </InfoBlock>
             </Container>
@@ -28,7 +28,6 @@ const Container = styled.div`
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-
     width: 100%;
     @media screen and (max-width: 768px) {
         flex-direction: column;
@@ -39,6 +38,8 @@ const InfoBlock = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    height: 80%;
+    overflow: auto;
     width: 50%;
     @media screen and (max-width: 768px) {
         width: 100%;

@@ -1,19 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
 interface CareerArgs {
-    data: {
-        title: string;
-        date: string;
-        role: string;
-    };
+    data: CareerTypes;
 }
+export type CareerTypes = {
+    id: number;
+    title: string;
+    date: string;
+    role: string;
+};
 const CareerItem = ({ data }: CareerArgs) => {
+    const { date, role, title } = data;
     return (
         <Container>
-            <Title>{data.title}</Title>
-
-            <SubText>{data.date}</SubText>
-            <SubText>{data.role}</SubText>
+            <Title>{title}</Title>
+            <SubText>{date}</SubText>
+            <SubText>{role}</SubText>
         </Container>
     );
 };
